@@ -1,0 +1,158 @@
+export interface MenuItem {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  category: string;
+  rating: number;
+  isVeg: boolean;
+  isBestseller?: boolean;
+  isFeatured?: boolean;
+}
+
+export const categories = [
+  "All",
+  "Asian",
+  "Italian",
+  "Indian",
+  "Mexican",
+  "Desserts",
+  "Fast Food",
+];
+
+export const menuItems: MenuItem[] = [
+  {
+    id: "1",
+    name: "Pho Beef",
+    description: "Authentic Vietnamese beef pho with rice noodles, fresh herbs, and rich bone broth simmered for 12 hours",
+    price: 14.99,
+    image: "/images/pho.jpg",
+    category: "Asian",
+    rating: 4.8,
+    isVeg: false,
+    isBestseller: true,
+    isFeatured: true,
+  },
+  {
+    id: "2",
+    name: "Sushi Platter",
+    description: "Assorted premium sushi rolls with fresh salmon, tuna, avocado, and wasabi",
+    price: 22.99,
+    image: "/images/sushi.jpg",
+    category: "Asian",
+    rating: 4.9,
+    isVeg: false,
+    isBestseller: true,
+    isFeatured: true,
+  },
+  {
+    id: "3",
+    name: "Margherita Pizza",
+    description: "Classic wood-fired pizza with San Marzano tomatoes, fresh mozzarella, and basil",
+    price: 16.99,
+    image: "/images/pizza.jpg",
+    category: "Italian",
+    rating: 4.7,
+    isVeg: true,
+    isBestseller: true,
+    isFeatured: true,
+  },
+  {
+    id: "4",
+    name: "Chicken Biryani",
+    description: "Fragrant basmati rice layered with tender chicken, saffron, and aromatic spices",
+    price: 15.99,
+    image: "/images/biryani.jpg",
+    category: "Indian",
+    rating: 4.8,
+    isVeg: false,
+    isBestseller: true,
+    isFeatured: true,
+  },
+  {
+    id: "5",
+    name: "Chocolate Lava Cake",
+    description: "Warm molten chocolate cake with a gooey center, served with vanilla ice cream",
+    price: 11.99,
+    image: "/images/dessert.jpg",
+    category: "Desserts",
+    rating: 4.9,
+    isVeg: true,
+    isBestseller: true,
+  },
+  {
+    id: "6",
+    name: "Pad Thai",
+    description: "Stir-fried rice noodles with shrimp, tofu, peanuts, and tamarind sauce",
+    price: 13.99,
+    image: "/images/padthai.jpg",
+    category: "Asian",
+    rating: 4.6,
+    isVeg: false,
+    isFeatured: true,
+  },
+  {
+    id: "7",
+    name: "Gourmet Burger",
+    description: "Black bun burger with wagyu beef, caramelized onions, truffle aioli, and aged cheddar",
+    price: 18.99,
+    image: "/images/burger.jpg",
+    category: "Fast Food",
+    rating: 4.7,
+    isVeg: false,
+    isBestseller: true,
+  },
+  {
+    id: "8",
+    name: "Tonkotsu Ramen",
+    description: "Rich pork bone broth ramen with chashu, soft-boiled egg, nori, and scallions",
+    price: 15.99,
+    image: "/images/ramen.jpg",
+    category: "Asian",
+    rating: 4.8,
+    isVeg: false,
+    isFeatured: true,
+  },
+  {
+    id: "9",
+    name: "Chicken Tacos",
+    description: "Three soft corn tacos with grilled chicken, guacamole, pico de gallo, and lime crema",
+    price: 12.99,
+    image: "/images/tacos.jpg",
+    category: "Mexican",
+    rating: 4.5,
+    isVeg: false,
+  },
+  {
+    id: "10",
+    name: "Pasta Carbonara",
+    description: "Creamy spaghetti with pancetta, egg yolk, pecorino romano, and black pepper",
+    price: 17.99,
+    image: "/images/pasta.jpg",
+    category: "Italian",
+    rating: 4.7,
+    isVeg: false,
+    isFeatured: true,
+  },
+  {
+    id: "11",
+    name: "Dim Sum Platter",
+    description: "Steamed shrimp and pork dumplings with chili oil and soy dipping sauce",
+    price: 14.99,
+    image: "/images/dimsum.jpg",
+    category: "Asian",
+    rating: 4.6,
+    isVeg: false,
+  },
+  {
+    id: "12",
+    name: "Paneer Tikka",
+    description: "Chargrilled cottage cheese marinated in spiced yogurt with mint chutney",
+    price: 13.99,
+    image: "/images/biryani.jpg",
+    category: "Indian",
+    rating: 4.5,
+    isVeg: true,
+  },
+];
